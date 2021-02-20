@@ -48,8 +48,11 @@ jobs:
          run: |
              mkdir work
              cd work
-             repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
-             repo sync -j4
+             mkdir ~/OrangeFox_10
+             cd ~/OrangeFox_10
+             git clone https://gitlab.com/OrangeFox/sync.git
+             cd ~/OrangeFox_10/sync
+             ./get_fox_10.sh ~/OrangeFox_10/fox_10.0
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
        - name: Build
