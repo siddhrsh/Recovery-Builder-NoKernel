@@ -14,9 +14,9 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
   DEVICE: RMX1941
-  DT_LINK: https://github.com/siddhrsh/TWRP_RMX1941.git b test
+  DT_LINK: https://github.com/siddhrsh/PBRP_RMX1941.git
   DT_PATH: device/realme/RMX1941
   TARGET: recoveryimage
   TZ: Asia/Kolkata
