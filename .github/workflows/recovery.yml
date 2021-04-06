@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0
-  DEVICE: RMX2050
-  DT_LINK: https://github.com/siddhrsh/TWRP_RMX2050.git
-  DT_PATH: device/realme/RMX2050
+  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_9.0
+  DEVICE: enchilada
+  DT_LINK: https://github.com/SHRP-Devices/device_oneplus_enchilada.git
+  DT_PATH: device/oneplus/enchilada
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
