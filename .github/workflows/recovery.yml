@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0
-  DEVICE: RMX1941
-  DT_LINK: https://github.com/SHRP-Devices/device_realme_RMX1941.git
-  DT_PATH: device/realme/RMX1941
+  DEVICE: RMX2050
+  DT_LINK: https://github.com/siddhrsh/TWRP_RMX2050.git
+  DT_PATH: device/realme/RMX2050
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
