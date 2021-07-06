@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_9.0
-  DEVICE: enchilada
-  DT_LINK: https://github.com/TeamWin/android_device_oneplus_enchilada.git
-  DT_PATH: device/oneplus/enchilada
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+  DEVICE: rmx2020
+  DT_LINK: https://github.com/siddhrsh/android_recovery_realme_RMX2020-RealmeUI2.git
+  DT_PATH: device/realme/rmx2020
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -50,6 +50,7 @@ jobs:
              cd work
              repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -j4
+             repo sync
              git clone $DT_LINK --depth=1 $DT_PATH
              
        - name: Build
